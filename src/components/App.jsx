@@ -22,9 +22,7 @@ function App() {
   };
 
   const deleteContact = id => {
-    setContacts(prevState =>
-      prevState.contacts.filter(contact => contact.id !== id)
-    );
+    setContacts(prevState => prevState.filter(contact => contact.id !== id));
   };
 
   useEffect(() => {
