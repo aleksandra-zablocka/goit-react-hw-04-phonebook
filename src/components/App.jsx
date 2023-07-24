@@ -17,7 +17,7 @@ function App() {
     if (doesContactExist) {
       alert('There is such contact on the list');
     } else {
-      setContacts(prevState => [...prevState.contacts, newContact]);
+      setContacts(prevState => [...prevState, newContact]);
     }
   };
 
